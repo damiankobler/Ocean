@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+  <style>
+  #fishButton{
+     }
+  #fish{height: 50%}
+  </style>
 
   <head>
     <meta charset="utf-8"/>
@@ -10,8 +15,33 @@
     <script defer phx-track-static type="text/javascript"
       src={Routes.static_path(@conn, "/assets/app.js")}></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      function sendFish(){
+        var x = document.getElementById("fish");
+        var y = document.getElementById("chatrooms").value;
+        var z = document.getElementById("animalimage");
+        switch(Number(y)) {
+          case 1:
+            z.src="/images/whale.png";
+            break;
+          case 2:
+            z.src="/images/shark.png";
+            break;
+          case 3:
+            z.src="/images/dolphin.png";
+            break;
+        }
+
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
+
   </head>
-  <body>
+  <body class="w-full h-full bg-repeat opacity-100 font-bold" style="background-image: url('https://cdn.pixabay.com/photo/2017/06/19/05/10/sea-2418209_1280.png');">
     <header class="bg-slate-800 w-full h-[4rem] top-0 fixed flex flex-col justify-center">
       <nav class="flex flex-row justify-between items-center text-white">
         <h1 class="md:text-3xl text-center font-mono ml-4">
@@ -19,8 +49,16 @@
         </h1>
       </nav>
     </header>
-    <main class="mt-[4rem]">
+    <main class="mt-[4rem]" >
         <%= @inner_content %>
     </main>
+
+    <div id="fish" class ="flex-col" >
+    <!-- The image has scrolling behavior to right -->
+    <marquee  behavior="scroll" direction="right">
+          <img id = "animalimage" src="/images/fish.png" alt="Fish Clip">
+    </marquee>
+    </div>
+
   </body>
 </html>

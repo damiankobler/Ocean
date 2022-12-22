@@ -39,7 +39,7 @@ function render_message(payload) {
   // Message HTML with Tailwind CSS Classes for layout/style:
   li.innerHTML = `
   <div class="flex flex-row w-[95%] mx-2 border-b-[1px] border-slate-300 py-2">
-    <div class="text-left w-1/5 font-semibold text-slate-800 break-words">
+    <div class="text-left w-1/5 font-semibold break-words">
       ${payload.name}
       <div class="text-xs mr-1">
         <span class="font-thin">${formatDate(payload.inserted_at)}</span> 

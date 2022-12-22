@@ -1,5 +1,5 @@
 # Ocean - a multi-user and multi-room chat app
-## We are:
+### We are:
 - Geraldine Hürzeler
 - Damian Kobler
 - Tishana Suthenthiran
@@ -10,8 +10,8 @@
 ### Repository structure
 ```bash
 .
-├── documentation     # One directory for each course assignment a1-a6 containing handed-in files
-├── src             # Source files for the phoenix application
+├── documentation   # Documentation in form of the report and presentation slides
+├── src             # Source files for the Phoenix app
 └── README.md
 ```
 ###  How to start the application

@@ -1,4 +1,4 @@
-# Ocean - a distributed multi-user chat messenger
+# Ocean - a multi-user and multi-room chat messenger
 ## We are:
 - Geraldine Hürzeler
 - Damian Kobler

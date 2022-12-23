@@ -3,28 +3,24 @@ defmodule ChatWeb.RoomChannel do
 
   @impl true
   def join("room:lobby", _payload, socket) do
-    #if authorized?(payload) do
       send(self(), :after_join)
       {:ok, socket}
   end
 
   @impl true
   def join("room:chat1", _payload, socket) do
-    #if authorized?(payload) do
       send(self(), :after_join1)
       {:ok, socket}
   end
 
   @impl true
   def join("room:chat2", _payload, socket) do
-    #if authorized?(payload) do
       send(self(), :after_join2)
       {:ok, socket}
   end
 
   @impl true
   def join("room:chat3", _payload, socket) do
-    #if authorized?(payload) do
       send(self(), :after_join3)
       {:ok, socket}
   end
@@ -56,7 +52,7 @@ defmodule ChatWeb.RoomChannel do
       }) end)
     {:noreply, socket} # :noreply
   end
-  
+
   def handle_info(:after_join2, socket) do
     Chat.Message.get_messages(2)
     |> Enum.reverse() # reverse to display the latest message at the bottom of the page

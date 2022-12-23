@@ -21,8 +21,6 @@ defmodule ChatWeb.Router do
 
     get "/", PageController, :index
     get "/chat", PageController, :chat
-    get "/login", AuthController, :login
-    get "/logout", AuthController, :logout
   end
 
 end

@@ -5,7 +5,7 @@
 - Tishana Suthenthiran
 
 ### Describtion
-The Ocean chat app is a web application based on Elixir and the Phoenix Framework. Users can send messages to three different chatrooms or topics. The chatrooms are multi-user, so it is like a group chat where everyone can see all of the messages. For adding a fun and colorful part, the app is ocean themed and there are animated ocean animals that swim across the screen based on which groupchat they joined. The database is hosted in PostgreSQL and the database management and connection is handled bi Ecto.
+The Ocean chat app is a web application based on Elixir and the Phoenix Framework. Users can send messages to three different chatrooms or topics. The chatrooms are multi-user, so it is like a group chat where everyone can see all of the messages and also broadcast a message to all of the users connected to that chatroom. For adding a fun and colorful part, the app is ocean themed and there are animated ocean animals that swim across the screen based on which groupchat they joined. The database is hosted in PostgreSQL and the database management and connection is handled bi Ecto.
 
 ### Repository structure
 ```bash

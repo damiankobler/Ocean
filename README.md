@@ -20,8 +20,4 @@
 3. Change into the src directory with *'cd Ocean/src/'*
 4. Run the command *'mix setup'* to setup the Phoenix app and install all dependencies
 5. Run the command *'mix phx.server'* to run the Phoenix app
-<<<<<<< HEAD
 6. Open *'localhost:4000'* in two web browsers and begin sending messages in the three chatrooms
-=======
-6. Open *'localhost:4000'* in two web browsers and begin sending messages in the three chatrooms
->>>>>>> 92218c8d8fae662330a87f3e5bfa9bfa2aaf70c0

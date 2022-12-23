@@ -23,3 +23,6 @@ The database is hosted in PostgreSQL and the database management and connection 
 4. Run the command *'mix setup'* to setup the Phoenix app and install all dependencies
 5. Run the command *'mix phx.server'* to run the Phoenix app
 6. Open *'localhost:4000'* in two web browsers and begin sending messages in the three chatrooms
+
+### [Demonstration of the App](https://youtu.be/mSrQhnMA3wY "App Demonstration")
+To see the successful start und running of the application we made a short video that opens the app in two browser windows and shows the functionalities and features we implemented like sending messages in multiple chatrooms and showing ocean animals.
